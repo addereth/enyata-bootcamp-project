@@ -1,7 +1,7 @@
 const form = document.querySelector('form')
 const Name = document.querySelector('#name')
 const Email = document.querySelector('#email')
-const error = document.querySelector('.error-prompt')
+const error = document.querySelector('.errorPrompt')
 
 form.addEventListener('submit', function(e){
     e.preventDefault()
@@ -10,7 +10,7 @@ form.addEventListener('submit', function(e){
         error.style.display = 'block'
 
         setTimeout(() => {
-            bug.style.display = 'none'
+            errorPrompt.style.display = 'none'
         }, 5000)
 
         return
