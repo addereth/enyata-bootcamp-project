@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,63 +12,51 @@
       rel="stylesheet"
     />
     <script src="index.js" defer></script>
-    <title>GameLoft</title>
+    <title>Gameloft</title>
   </head>
-
   <body>
-    <div class="header">
-      <h1 class="header-title">GameLoft</h1>
-    </div>
-
-    <div class="picture_main">
-      <img class="picture" src="assets/banner.jpeg" alt="">
-      <div class="message">
-        <h2 class="picture-text">Welcome to <br/><span>GameLoft<span></span></h2>
-      </div>
-    </div>
-
-
-    <div class="nav">
-      <ul class="nav-list">
-        <li class="item_nav"><a href="#" class="links_nav signup">Sign Up</a></li>
-        <li class="item_nav"><a href="#" class="links_nav">Latest News</a></li>
-        <li class="item_nav"><a href="#latestRelease" class="links_nav">New Releases</a></li>
-        <li class="item_nav"><a href="#contact-us" class="links_nav">Contact</a></li>
-      </ul>
-    </div>
-
-
-
-    <section id="latestRelease" class="main">
-      <h2 class="header_main">Latest Releases</h2>
-      <p class="main_text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ad 
-        sint suscipit expedita voluptas dicta ullam! Eos non deserunt consequuntur 
-        eaque inventore nesciunt laudantium fuga, nisi, quibusdam nihil sit iure.
-      </p>
-      <div class="images">
-        <img src="assets/game1.jpeg" class="game_ad" alt="red dead redemption">
-        <img src="assets/game2.jpeg" class="game_ad" alt="GTA">
-        <img src="assets/game3.jpeg" class="game_ad" alt="midnight club">
-      </div>
-
-
+    <header><h1>Gameloft</h1></header>
+    
+    <section class="first-block"><img src="./assets/banner.jpeg" alt="Picture of Gameloft" srcset="">
+        <div class="welcome"><h2>Welcome to <br> Gameloft</h2></div>
     </section>
-    <section class="contact-us" id="contact-us">
-      <h2 class="contact-header">Join Today</h2>
-      <p class="contact-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      <p class="error-message">Please fields can't be empty</p>
+    
+    <nav class="nav-block">
+        <ul>
+            <li><a href="#" class="signing-up">Sign Up</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">New Releases</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-      <form class="forms" action="#">
-        <input type="text" class="form-input" name="name" id="name" placeholder="Enter your name">
-        <input type="email" class="form-input" name="email" id="email" placeholder="Enter your email">
-        <button type="submit" class="btn">Submit</button>
-      </form>
+    <main>
+        <article><h2>Latest Releases</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum aspernatur repudiandae possimus in laboriosam, harum ea maxime dolorum accusamus? Odit tempora velit repellat, et aliquam facere vero perspiciatis veniam!</p>
+        </article>
+
+        <ul class="images">
+            <li><img src="./assets/game1.jpeg" alt="Red dead redemption II" srcset=""></li>
+            <li><img src="./assets/game2.jpeg" alt="Grand Theft Auto V" srcset=""></li>
+            <li><img src="./assets/game3.jpeg" alt="" srcset="Midnight Club II"></li>
+
+        </ul>
+    </main>
+
+    <section id="contact" class="details">
+        <h2>Join Today</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p class="error-prompt">Please fields cannot be empty</p>
+
+
+        <form action="">
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <input type="email" name="e-mail" id="e-mail" placeholder="Enter your e-mail">
+
+            <button class="submission"> submit</button>
+        </form>
     </section>
 
-
-    <div class="footer">
-      <p class="copyright">Copyright &#169; 2022 GameLoft</p>
-    </div>
+    <footer><p>Copyright © 2022 GameLoft</p></footer>
   </body>
 </html>

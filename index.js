@@ -1,25 +1,24 @@
-const form = document.querySelector('.forms');
-let name = document.getElementById('name');
-let email = document.getElementById('email');
-const error = document.querySelector('.error-message');
-const btn = document.querySelector('.btn');
+const form = document.querySelector('form')
+const Name = document.querySelector('#name')
+const Email = document.querySelector('#email')
+const error = document.querySelector('.error-prompt')
 
-function vanish() {
-    error.style.display = 'none';
-}
+form.addEventListener('submit', function(e){
+    e.preventDefault()
 
-btn.addEventListener('click', function(e){
-    e.preventDefault();
+    if(Name.value === '' ||  Email.value === ''){
+        error.style.display = 'block'
 
-    if(name.value === '' ||  email.value === ''){
-        error.style.display = 'block';
-        setTimeout(vanish, 5000)
-        return;
+        setTimeout(() => {
+            bug.style.display = 'none'
+        }, 5000)
+
+        return
     }
-    let result = `Hello ${name.value}🎊👨‍💻, your form has been submitted successfully. Your email is ${email.value}`
-    alert(result);
-
-    name.value = '';
-    email.value = '';
+    alert(`Hello {Name.value}🎊, your form has been submitted successfully.\nYour email is {Email.value}`)
+    console.log(Name.value)
+    console.log(Email.value)
     
-});
+
+    Name.value = ''
+    Email.value = ''
