@@ -1,6 +1,6 @@
 const form = document.querySelector('form')
-const Name = document.querySelector('#name')
-const Email = document.querySelector('#email')
+const Name = document.querySelector('#formname')
+const Email = document.querySelector('#e-mail')
 const error = document.querySelector('.errorPrompt')
 
 form.addEventListener('submit', function(e){
